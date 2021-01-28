@@ -1,0 +1,15 @@
+name: JuhanActioni
+
+on:
+        push:
+
+                
+jobs: 
+  juhaTestActionJobName:
+    runs-on: ubuntu-20.04
+    
+    steps:
+      - name: Shout
+      - uses: master
+      - run: echo "Test"
+

@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-20.04
     
     steps:
-      - uses: github-actions-test@main
+      - uses: actions/checkout@v2
         
       - name: Echo test
         run: echo "Test"

@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-20.04
     
     steps:
-      - name: Shout
-      - uses: master
-      - run: echo "Test"
+      - uses: github-actions-test@main
+        
+      - name: Echo test
+        run: echo "Test"
 

@@ -1,7 +1,7 @@
 name: JuhanActioni
 
 on:
-        push:
+  push:
 
                 
 jobs: 
@@ -14,3 +14,12 @@ jobs:
       - name: Echo test
         run: echo "Test"
 
+  testBranchJob:
+    runs-on: ubuntu-20.04
+
+    if: contains(github.ref, "test-branch")
+    steps:
+      - uses: action/checkout@v2
+
+      - name: Test Branch Job
+        run: echo "Running on test-branch!"

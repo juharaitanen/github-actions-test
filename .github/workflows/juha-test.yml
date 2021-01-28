@@ -15,9 +15,9 @@ jobs:
         run: echo "Test"
 
   testBranchJob:
+    if: github.ref == 'refs/heads/test-branch'
     runs-on: ubuntu-20.04
 
-    if: contains(github.ref, "test-branch")
     steps:
       - uses: action/checkout@v2
 
